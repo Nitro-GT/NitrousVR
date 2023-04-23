@@ -198,7 +198,7 @@ local function Align2(Part1, Part0, Position, Angle)
     game:GetService("RunService").Heartbeat:Connect(function(set)
         Part1.CFrame = Part0.CFrame * Position * Angle * CFrame.Angles(0,0,-.0005*math.sin(100*tick()))
      Part1:BreakJoints()
-    Part1.Transparency = 0.95
+    Part1.Transparency = 0.99
     end)
     end
 head.Handle:BreakJoints()
