@@ -13,6 +13,10 @@
 '   : |      ;  :    ;|  ,   /  ---'      `----'  :  ,      .-./'--'.     /              :   \ |:   : :-'   
 ;   |.'      |  ,   /  ---`-'                      `--`----'      `--'---'                '---" |   |.'     
 '---'         ---`-'                                                                            `---'     
+
+
+
+NITROUS VR IS DISCONTINUED UNTIL FURTHER NOTICE
        credits: Nitro - Fixing and Modernizing Script 
                  Sked - Original Script
                  
