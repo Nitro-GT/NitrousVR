@@ -23,7 +23,7 @@ Sked - Original Script
                  
 Nitrous VR is a Recreation of Sked's fe VR script, It aims to be usable with most functions in a few games
 
-You need 3 hats, 1 of your choosing: 
+You need 3 hats
 17374846953 (https://www.roblox.com/catalog/17374846953) 
 17374851733 (https://www.roblox.com/catalog/17374851733)  
 17388263821 (https://www.roblox.com/catalog/17388263821)
