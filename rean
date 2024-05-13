@@ -207,9 +207,6 @@ end
 c["Body Colors"]:Clone().Parent = char
 game:GetService("Players").LocalPlayer.Character.PrimaryPart = c.Head
 char.HumanoidRootPart.Anchored = false
-if not c:FindFirstChild("Tor") then
-c["ExtraNoobTorso"].Name = "Tor"
-end
 for i,v in pairs(c:GetChildren()) do
 if v:IsA("Accessory") and v.Name == "Pants" then
 v:Destroy()
