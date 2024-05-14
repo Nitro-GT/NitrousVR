@@ -18,7 +18,7 @@
 
 Guess Who's back? Nitrous VR!
 credits:
-Nitro - Fixing and Modernizing Script 
+Nitro - Fixing and Modernizing Script + making it work after pd patch
 Sked - Original Script
                  
 Nitrous VR is a Recreation of Sked's fe VR script, It aims to be usable with most functions in a few games
