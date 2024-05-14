@@ -15,10 +15,8 @@ print([[
 '---'         ---`-'                                                                            `---'  
 ]])
 
-
--- THESE DONT WORK ANYMORE!
-_G.HeadHat = "MeshPartAccessory"
-_G.NitrousHats = false -- enables hats
+_G.HeadHat = "Meshes/funnyface_1 (1) (1)Accessory"
+_G.NitrousHats = true -- enables hats
 _G.Hat1 = "HatName"
 _G.Hat2 = "HatName"
 _G.Hat3 = "HatName"
@@ -31,10 +29,10 @@ _G.Hat3Offset = CFrame.new(0,0,0)
 
 
 
+workspace.Gravity = 0
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Nitro-GT/NitrousVR/main/rean"))()
 wait(.05)
 
-workspace.Gravity = 0
        local c = game.Players.LocalPlayer.Character
        local char = c
 local prt=Instance.new("Model", workspace)
@@ -105,7 +103,7 @@ local moveHead = createpart(Vector3.new(1,1,1), "moveH")
 
 local handL = c["Left Arm"]
 local handR =c["Right Arm"]
-local head = c["Accessory (Sinister)"]
+local head = c[_G.HeadHat]
 local R1down = false
 
 
@@ -151,15 +149,24 @@ local function Align2(Part1, Part0, Position, Angle)
     game:GetService("RunService").Heartbeat:Connect(function(set)
         Part1.CFrame = Part0.CFrame * Position * Angle 
      Part1:BreakJoints()
-    Part1.Transparency = 0.99
     end)
     end
 
 
-Align2(head.Handle,moveHead,CFrame.new(0,0,0),  CFrame.Angles(math.rad(0),math.rad(180),math.rad(0)))
+Align2(head.Handle,moveHead,CFrame.new(0,0,0),  CFrame.Angles(math.rad(0),math.rad(0),math.rad(0)))
 Align(handR,moveHandR,CFrame.new(0,0,0),CFrame.Angles(math.rad(0),math.rad(0),math.rad(0)))
 Align(handL,moveHandL,CFrame.new(0,0,0), CFrame.Angles(math.rad(0),math.rad(0),math.rad(0)))
-
+if _G.NitrousHats == true then
+pcall(function()
+Align2(c[_G.Hat1].Handle,moveHead,_G.Hat1Offset, CFrame.Angles(math.rad(0),math.rad(0),math.rad(0)))
+end)
+pcall(function()
+Align2(c[_G.Hat2].Handle,moveHead,_G.Hat2Offset, CFrame.Angles(math.rad(0),math.rad(0),math.rad(0)))
+end)
+pcall(function()
+Align2(c[_G.Hat3].Handle,moveHead,_G.Hat3Offset, CFrame.Angles(math.rad(0),math.rad(0),math.rad(0)))
+end)
+end
 input.InputChanged:connect(function(key)
 	if key.KeyCode == Enum.KeyCode.ButtonR1 then
 		if key.Position.Z > 0.9 then
