@@ -1191,7 +1191,7 @@ pcall(function()
 	for _, child in pairs(char:GetChildren()) do
 		if child:IsA("BasePart") and child.Name ~= "Part" then
             if child:FindFirstChildOfClass("SpecialMesh") then
-                if child:FindFirstChildOfClass("SpecialMesh").MeshType == Enum.Meshtype.Cylinder then
+                if child:FindFirstChildOfClass("SpecialMesh").MeshType == Enum.MeshType.Cylinder then
                     return 
                 end 
             end
