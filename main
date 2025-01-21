@@ -25,23 +25,55 @@ print([[
                                                                                                      
                                                                                                      
 ]])
+_G.HatCollide = false
+_G.CustomHats = true -- Enable or disable custom rig feature (basically old oxide when false)
+_G.CH = {
+    Torso = {
+        Name= "burger",
+        TextureId = "87928159560963",
+        Orientation= CFrame.Angles(math.rad(0),math.rad(0),math.rad(0))
+    },
 
+    LeftArm = {
+        Name= "Accessory (Guest Left Arm)",
+        TextureId = "72193962238808", 
+        Orientation= CFrame.Angles(math.rad(0),math.rad(0),math.rad(0))
+    },
+
+    RightArm = {
+        Name= "Accessory (Guest Right Arm)",
+        TextureId = "86835481875891", 
+        Orientation= CFrame.Angles(math.rad(0),math.rad(0),math.rad(0))
+    },
+
+    LeftLeg = {
+        Name= "Accessory (LARM)",
+        TextureId = "17374768001", 
+        Orientation= CFrame.Angles(math.rad(0),math.rad(0),math.rad(90))
+    },
+
+    RightLeg = {
+        Name= "Accessory (RARM)",
+        TextureId = "17374768001", 
+        Orientation= CFrame.Angles(math.rad(0),math.rad(0),math.rad(90))
+    }
+}
 _G.HeadHat = "RetroFace"
 _G.NitrousHats = true -- enables hats
-_G.Hat1 = "HatName"
-_G.Hat2 = "HatName"
+_G.Hat1 = "Robloxclassicred"
+_G.Hat2 = "Accessory (Guest Torso)"
 _G.Hat3 = "HatName"
 -- Get the offsets in studio by putting your head hat handle and the other hat's handle at 0,0,0
 -- and then move the offsetted hat until it looks normal and copy the position
-_G.Hat1Offset = CFrame.new(0,0,0) 
-_G.Hat2Offset = CFrame.new(0,0,0) 
+_G.Hat1Offset = CFrame.new(0,0.55,-0.1) 
+_G.Hat2Offset = CFrame.new(0,-2,0) 
 _G.Hat3Offset = CFrame.new(0,0,0)
 
 
 
 
 workspace.Gravity = 0
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Nitro-GT/NitrousVR/main/rean"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Nitro-GT/NitrousVR/main/rean22"))()
 wait(.05)
 
        local c = game.Players.LocalPlayer.Character
