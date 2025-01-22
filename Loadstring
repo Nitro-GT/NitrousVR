@@ -1,5 +1,5 @@
 print([[ 
-                                                                                                                                                           
++                                                                                                                                                           
          ,--.                                                                                                                                .--,-``-.     
        ,--.'|               ___                                                                           ,-.----.                          /   /     '.   
    ,--,:  : |   ,--,      ,--.'|_                                                                   ,---. \    /  \                  ,---. / ../        ;  
@@ -209,15 +209,7 @@ pcall(function()
 Align2(c[_G.Hat3].Handle,moveHead,_G.Hat3Offset, CFrame.Angles(math.rad(0),math.rad(0),math.rad(0)))
 end)
 end
-input.InputChanged:connect(function(key)
-	if key.KeyCode == Enum.KeyCode.ButtonR1 then
-		if key.Position.Z > 0.9 then
-			R1down = true
-		else
-			R1down = false
-		end
-	end
-end)
+
 
 input.InputBegan:connect(function(key)
 	if key.KeyCode == Enum.KeyCode.ButtonR1 then
