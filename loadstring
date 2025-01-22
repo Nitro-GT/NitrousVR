@@ -25,6 +25,38 @@ print([[
                                                                                                      
                                                                                                      
 ]])
+_G.CustomHats = true -- Enable or disable custom rig feature (basically old oxide when false)
+_G.CH = {
+    Torso = {
+        Name= "burger",
+        TextureId = "87928159560963",
+        Orientation= CFrame.Angles(math.rad(0),math.rad(0),math.rad(0))
+    },
+
+    LeftArm = {
+        Name= "Accessory (Left ArmAccessory)",
+        TextureId = "103757531289975", 
+        Orientation= CFrame.Angles(math.rad(0),math.rad(0),math.rad(0))
+    },
+
+    RightArm = {
+        Name= "Accessory (Right ArmAccessory)",
+        TextureId = "103757531289975", 
+        Orientation= CFrame.Angles(math.rad(0),math.rad(0),math.rad(0))
+    },
+
+    LeftLeg = {
+        Name= "Accessory (LARM)",
+        TextureId = "17374768001", 
+        Orientation= CFrame.Angles(math.rad(0),math.rad(0),math.rad(90))
+    },
+
+    RightLeg = {
+        Name= "Accessory (RARM)",
+        TextureId = "17374768001", 
+        Orientation= CFrame.Angles(math.rad(0),math.rad(0),math.rad(90))
+    }
+}
 _G.HatCollide = false
 _G.NitrousHats = false -- enables hats
 _G.Hat1 = "HatName"
