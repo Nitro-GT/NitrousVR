@@ -35,14 +35,14 @@ _G.CH = {
     },
 
     LeftArm = {
-        Name= "Accessory (Guest Left Arm)",
-        TextureId = "72193962238808", 
+        Name= "Accessory (Left ArmAccessory)",
+        TextureId = "103757531289975", 
         Orientation= CFrame.Angles(math.rad(0),math.rad(0),math.rad(0))
     },
 
     RightArm = {
-        Name= "Accessory (Guest Right Arm)",
-        TextureId = "86835481875891", 
+        Name= "Accessory (Right ArmAccessory)",
+        TextureId = "103757531289975", 
         Orientation= CFrame.Angles(math.rad(0),math.rad(0),math.rad(0))
     },
 
@@ -58,10 +58,11 @@ _G.CH = {
         Orientation= CFrame.Angles(math.rad(0),math.rad(0),math.rad(90))
     }
 }
-_G.HeadHat = "RetroFace"
+_G.HeadScale = 3
+_G.HeadHat = "Accessory (BiggestHeadWhite)"
 _G.NitrousHats = true -- enables hats
-_G.Hat1 = "Robloxclassicred"
-_G.Hat2 = "Accessory (Guest Torso)"
+_G.Hat1 = "HatName"
+_G.Hat2 = "HatName"
 _G.Hat3 = "HatName"
 -- Get the offsets in studio by putting your head hat handle and the other hat's handle at 0,0,0
 -- and then move the offsetted hat until it looks normal and copy the position
@@ -102,7 +103,7 @@ local options = {}
 
 -- OPTIONS:
 options.delbody = true
-options.headscale = 2 -- how big you are in vr, 1 is default, 3 is recommended for max comfort in vr
+options.headscale = _G.HeadScale -- how big you are in vr, 1 is default, 3 is recommended for max comfort in vr
 options.forcebubblechat = true -- decide if to force bubblechat so you can see peoples messages
 
 options.headhat = _G.HeadHat --name of the accessory which you are using as a head
