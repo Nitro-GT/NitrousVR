@@ -212,13 +212,13 @@ end
 
 
 input.InputBegan:connect(function(key)
-	if key.KeyCode == Enum.KeyCode.ButtonR1 then
+	if key.KeyCode == Enum.KeyCode.ButtonR1 or key.KeyCode == Enum.KeyCode.ButtonA then
 		R1down = true
 	end
 end)
 
 input.InputEnded:connect(function(key)
-	if key.KeyCode == Enum.KeyCode.ButtonR1 then
+	if key.KeyCode == Enum.KeyCode.ButtonR1 or key.KeyCode == Enum.KeyCode.ButtonA then
 		R1down = false
 	end
 end)
