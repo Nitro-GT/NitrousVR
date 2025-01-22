@@ -25,6 +25,7 @@ print([[
                                                                                                      
                                                                                                      
 ]])
+_G.HatCollide = false
 _G.NitrousHats = false -- enables hats
 _G.Hat1 = "HatName"
 _G.Hat2 = "HatName"
