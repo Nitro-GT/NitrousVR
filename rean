@@ -985,7 +985,9 @@ pcall(function()
 		end
 	end
 	char.Parent = workspace
+pcall(function()
 	c.Parent = char
+end)
 	_G.Flinging = false
 
 	local swordbigvel = false
