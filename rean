@@ -1379,7 +1379,7 @@ pcall(function()
 	local connect
 	local sin = math.sin
 	local plrs = game:GetService("Players")
-    local antisleepMultiplier=Vector3.new(.005,.0015,.005)
+    local antisleepMultiplier=Vector3.new(.0025,.0025,.0025)
 	if _G.CustomHats == false then
 		connect = game:GetService("RunService").Heartbeat:Connect(function(set)
 			sine=os.clock
