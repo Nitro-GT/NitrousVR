@@ -74,6 +74,7 @@ _G.Hat3Offset = CFrame.new(0,0,0)
 
 
 
+workspace.Gravity = 0
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Nitro-GT/NitrousVR/main/rean"))()
 wait(.05)
 
