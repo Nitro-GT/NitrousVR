@@ -616,6 +616,7 @@ local function redo()
 		c.Humanoid:TakeDamage(c.Humanoid.MaxHealth)
 	end
 
+	local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/TypicallyAUser/TypicalsConvertingLibrary/main/Main"))()
 
 
 	speaker = game:GetService("Players").LocalPlayer
@@ -808,9 +809,37 @@ local function redo2()
 	wait(.001)
 
 
+	local gay = true -- dont edit >:(
+	hmode = nil
+	if gay == true then
+		hmode = "norm" 
+	else
+		hmode = "alsoo3" -- hate this guy
+	end
 
 
 
+	Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Nitro-GT/OxideReanim/main/library"))()
+
+	local HatMode=hmode
+
+	if HatMode=="alsoo3" then
+
+		local HATDUPES = Library.MakeTableOfHats("Mesh",{Mesh_Id=4315410540})
+		HATDUPES[1].Name = "DemonGodSword"
+		HATDUPES[2].Name = "RainbowGodSword"
+		HATDUPES[3].Name = "ToxicLordSword"
+		HATDUPES[4].Name = "DemonLordSword"
+		if Library.FindHat("ShadowBladeMasterAccessory") then
+			Library.FindHat("ShadowBladeMasterAccessory").Name="VoidLordSword"
+		end
+
+		if Library.FindHat("BladeMasterAccessory") then
+			Library.FindHat("BladeMasterAccessory").Name="AuroraSword"
+
+		end
+	else
+	end
 	local c = game:GetService("Players").LocalPlayer.Character
 
 
@@ -985,9 +1014,7 @@ pcall(function()
 		end
 	end
 	char.Parent = workspace
-pcall(function()
 	c.Parent = char
-end)
 	_G.Flinging = false
 
 	local swordbigvel = false
@@ -1352,7 +1379,7 @@ end)
 	local connect
 	local sin = math.sin
 	local plrs = game:GetService("Players")
-    local antisleepMultiplier=Vector3.new(.0025,.0025,.0025)
+    local antisleepMultiplier=Vector3.new(.005,.0015,.005)
 	if _G.CustomHats == false then
 		connect = game:GetService("RunService").Heartbeat:Connect(function(set)
 			sine=os.clock
