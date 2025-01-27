@@ -1684,17 +1684,6 @@ pcall(function()
 			end
 		end
 	end
-
-	wait(game:GetService("Players").RespawnTime - .1)
-	local cam = workspace.CurrentCamera
-	local cfr = cam.CFrame
-
-	task.wait(.15)
-	transparent()
-	velocity:Disconnect() 
-	--cam.CFrame = cfr
-	task.wait(.5)
-	connect:Disconnect()
 end
 redo()
 game:GetService("StarterGui"):SetCore("SendNotification", {
@@ -1708,6 +1697,8 @@ local oldh = workspace.FallenPartsDestroyHeight
 
 respawnloop = plr.CharacterAdded:Connect(function(re)
 	if re ~= char then
+replicatesignal("1")
+task.wait(game.Players.RespawnTime +.1)
         if _G.HatCollide == false then 
             repeat wait() until re:FindFirstChildOfClass("Humanoid")
             moveloop = game:GetService("RunService").Heartbeat:Connect(function()
@@ -1810,7 +1801,7 @@ respawnloop = plr.CharacterAdded:Connect(function(re)
 				if plr.Character.Name ~= "non" then
 					if _G.TeleportCharacter == true then
                         if _G.HatCollide == false then
-						plr.Character:WaitForChild("HumanoidRootPart").CFrame =CFrame.new( workspace.non["Left Arm"].CFrame.X  , workspace.FallenPartsDestroyHeight + 150, workspace.non["Left Arm"].CFrame.Z  ) 
+						plr.Character:WaitForChild("HumanoidRootPart").CFrame =CFrame.new( workspace.non["Left Arm"].CFrame.X  , workspace.FallenPartsDestroyHeight + 450, workspace.non["Left Arm"].CFrame.Z  ) 
                         else 
 	plr.Character:WaitForChild("HumanoidRootPart").CFrame =CFrame.new( workspace.non["Left Arm"].CFrame.X  , workspace.FallenPartsDestroyHeight + .25, workspace.non["Left Arm"].CFrame.Z  ) 
 
