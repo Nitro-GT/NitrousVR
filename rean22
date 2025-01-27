@@ -1504,15 +1504,7 @@ pcall(function()
 			for i,v in pairs(c:GetChildren()) do
 				if v:IsA("Tool")  then
 					pcall(function()
-						if not char:FindFirstChild("FAKE"..v.Name) then
-							v.Handle.CFrame = char.HumanoidRootPart.CFrame *CFrame.new(0,-50,0)
-						else 
-							if _G.ToolFling == true then
-								v.Handle.CFrame = cfAdd(flingpart.CFrame,flingpart.AssemblyLinearVelocity*(sin(sine()*15)+1))
-							else 
-								v.Handle.CFrame = char:FindFirstChild("FAKE"..v.Name).Handle.CFrame + antisleep  
-							end
-						end
+								v.Handle.CFrame = char["Right Arm"].CFrame * CFrame.Angles(math.rad(90),0,0)
 					end)
 				end
 			end
@@ -1614,15 +1606,7 @@ pcall(function()
 			for i,v in pairs(c:GetChildren()) do
 				if v:IsA("Tool")  then
 					pcall(function()
-						if not char:FindFirstChild("FAKE"..v.Name) then
-							v.Handle.CFrame = char.HumanoidRootPart.CFrame *CFrame.new(0,-50,0)
-						else 
-							if _G.ToolFling == true then
-								v.Handle.CFrame = cfAdd(flingpart.CFrame,flingpart.AssemblyLinearVelocity*(sin(sine()*15)+1))
-							else 
-								v.Handle.CFrame = char:FindFirstChild("FAKE"..v.Name).Handle.CFrame + antisleep  
-							end
-						end
+								v.Handle.CFrame = char["Right Arm"].CFrame * CFrame.Angles(math.rad(90),0,0)
 					end)
 				end
 			end
