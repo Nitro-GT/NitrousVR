@@ -321,7 +321,6 @@ local function redo()
 	else
 		char = workspace.non
 	end
-char:ScaleTo(3)
 	_G.OxideFakeChar = char 
 	if _G.MiztCompat == false then
 		char.Name = c.Name.." (Dummy)"
