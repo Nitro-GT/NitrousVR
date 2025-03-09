@@ -1,5 +1,5 @@
 print([[ 
-+                                                                                                                                                           
+                                                                                                                                                           
          ,--.                                                                                                                                .--,-``-.     
        ,--.'|               ___                                                                           ,-.----.                          /   /     '.   
    ,--,:  : |   ,--,      ,--.'|_                                                                   ,---. \    /  \                  ,---. / ../        ;  
@@ -37,14 +37,14 @@ _G.CH = {
     },
 
     LeftArm = {
-        Name= "Accessory (BIGGESTLEFTARMPOSSIBLE!!)",
-        TextureId = "103757531289975", 
+        Name= "Accessory (BIGGEST LEFT ARMAccessory)",
+        TextureId = "117484156735788", 
         Orientation= CFrame.Angles(math.rad(0),math.rad(0),math.rad(0))
     },
 
     RightArm = {
-        Name= "Accessory (BIGGESTRIGHTARMPOSSIBLE!!)",
-        TextureId = "103757531289975", 
+        Name= "Accessory (BIGGEST RIGHT ARMAccessory)",
+        TextureId = "117484156735788", 
         Orientation= CFrame.Angles(math.rad(0),math.rad(0),math.rad(0))
     },
 
